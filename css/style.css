@@ -1,0 +1,12 @@
+.top-black-bar {
+    height: 35px;
+    background-color: black;
+}
+
+.top-logo > img{
+    width: 100%;
+}
+
+.navbar {
+    text-align: center;
+}
