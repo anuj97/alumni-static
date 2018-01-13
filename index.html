@@ -302,6 +302,7 @@
                 </ul>
                 <footer><a class="btn small" href="#">Read More &raquo;</a></footer>
             </article>
+            <br><br>
             <div class="clear"></div>
             <article class="one_quarter first"><img src="images/demo/320x238.png" alt="">
                 <h4 class="heading font-x1"><a href="#">Etiam a commodo ipsum donec</a></h4>
@@ -475,10 +476,25 @@
     </div>
     <div class="wrapper row5">
         <div id="copyright" class="hoc clear">
-            <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
-            <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+            <p class="fl_left">Copyright &copy; 2017 - Alumni Association</p>
+            <p class="fl_right"><a target="_blank" href="#">Indian Institute of Information Technology, Design and Manufacturing, Jabalpur</a></p>
         </div>
     </div>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+
     <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
     <!-- JAVASCRIPTS -->
     <script src="layout/scripts/jquery.min.js"></script>
@@ -489,5 +505,33 @@
     <script src="layout/scripts/jquery.placeholder.min.js"></script>
     <!-- / IE9 Placeholder Support -->
 </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
 
 </html>
