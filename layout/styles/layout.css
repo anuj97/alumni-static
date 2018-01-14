@@ -1078,49 +1078,49 @@ textarea:focus,
 }
 
 #introblocks ul li:nth-child(1) {
-    background-color: #55DEA8;
+    background-color: #33c98e;
 }
 
 /*Green*/
 
 #introblocks ul li:nth-child(2) {
-    background-color: #FF7659;
+    background-color: #fc4c27;
 }
 
 /*Orange*/
 
 #introblocks ul li:nth-child(3) {
-    background-color: #9771BD;
+    background-color: #693f93;
 }
 
 /*Purple*/
 
 #introblocks ul li:nth-child(4) {
-    background-color: #F36174;
+    background-color: #e31f39;
 }
 
 /*Red*/
 
 #introblocks ul li:nth-child(1) i {
-    background-color: #27D18D;
+    background-color: #10b975;
 }
 
 /*Dark Green*/
 
 #introblocks ul li:nth-child(2) i {
-    background-color: #FF502B;
+    background-color: #fa3a12;
 }
 
 /*Dark Orange*/
 
 #introblocks ul li:nth-child(3) i {
-    background-color: #8456B1;
+    background-color: #5f2a93;
 }
 
 /*Dark Purple*/
 
 #introblocks ul li:nth-child(4) i {
-    background-color: #F03E54;
+    background-color: #dd1a32;
 }
 
 /*Dark Red*/
