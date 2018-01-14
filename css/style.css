@@ -64,19 +64,6 @@ body {
     padding-bottom: 10px;
 }
 
-.student-co > img{
-
-}
-
-.student-co p {
-    text-align: center;
-}
-
-#feat_alumni {
-    padding-top: 2vw;
-    padding-bottom:2vw;
-}
-
 @media (min-width : 768px) {
 
     .feat_alumni {
