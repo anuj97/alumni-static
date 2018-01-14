@@ -7,10 +7,6 @@ body {
     background-color: black;
 }
 
-.top-logo > img {
-    width: 100%;
-}
-
 .navbar {
     text-align: center;
 }
@@ -92,5 +88,31 @@ body {
         float: left;
         width: 70%;
     }
+
+    .top-logo {
+        background-image: url(../images/title14.jpg);
+        background-size: contain;
+        height:7.2vw;
+        background-repeat: no-repeat;
+    }
 }
 
+@media (min-width : 481px) and (max-width : 767px) {
+
+    .top-logo {
+        background-image: url(../images/Drawing.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 22vw;
+    }
+}
+
+@media (max-width : 480px) {
+
+    .top-logo {
+        background-image: url(../images/Drawing.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 22vw;
+    }
+}
