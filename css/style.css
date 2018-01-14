@@ -81,25 +81,16 @@ body {
     padding-bottom:2vw;
 }
 
-@media (max-width : 480) {
+@media (min-width : 768px) {
 
-    #feat_alumni {
+    .feat_alumni {
         float: right;
         width: 30%;
     }
 
-    #feat_desc {
+    .feat_desc {
         float: left;
         width: 70%;
     }
 }
 
-#feat_alumni {
-    float: right;
-    width: 30%;
-}
-
-#feat_desc {
-    float: left;
-    width: 70%;
-}
