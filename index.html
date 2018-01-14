@@ -377,12 +377,19 @@
 <script>
     // Owl Carousel
     $('.owl-carousel').owlCarousel({
-        loop:true,
-        items:1,
-        mouseDrag:true,
-        touchDrag:true,
-        stagePadding:50,
-        rewind:true,
+        loop : true,
+        mouseDrag : true,
+        touchDrag : true,
+        stagePadding : 50,
+        rewind : true,
+        responsive : {
+            0 : {
+                item : 1,
+            },
+            480 : {
+                item : 3,
+            }
+        }
     })
 
     // Get the modal
