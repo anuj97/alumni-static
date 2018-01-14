@@ -77,7 +77,16 @@ body {
 }
 
 #feat_alumni {
-    height: 20vw;
-    width: auto;
     float: right;
+    width: 30%;
+}
+
+#feat_desc {
+    float: left;
+    width: 70%;
+}
+
+.item > img {
+    height: 10vw;
+    width: auto;
 }
