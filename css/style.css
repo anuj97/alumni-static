@@ -76,17 +76,46 @@ body {
     text-align: center;
 }
 
-#feat_alumni {
-    float: right;
-    width: 30%;
-}
-
-#feat_desc {
-    float: left;
-    width: 70%;
-}
-
 .item > img {
     height: 10vw;
     width: auto;
+}
+
+@media only screen and (max-width: 480) {
+    /* For Desktop*/
+    #feat_alumni {
+        float: right;
+        width: 30%;
+    }
+
+    #feat_desc {
+        float: left;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 480) and (max-width: 768) {
+    /* For Tabs*/
+    #feat_alumni {
+        float: right;
+        width: 50%;
+    }
+
+    #feat_desc {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768) {
+    /* For Desktop*/
+    #feat_alumni {
+        float: right;
+        width: 30%;
+    }
+
+    #feat_desc {
+        float: left;
+        width: 70%;
+    }
 }
