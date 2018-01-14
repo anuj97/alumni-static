@@ -75,3 +75,9 @@ body {
 .student-co p {
     text-align: center;
 }
+
+#feat_alumni {
+    height: 20vw;
+    width: auto;
+    float: right;
+}

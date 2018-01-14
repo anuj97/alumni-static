@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
@@ -247,9 +249,14 @@
     <div class="wrapper bgded overlay coloured" style="background-image:url('images/demo/backgrounds/02.png')">
         <div class="hoc spaceit-5050 clear">
             <article>
-                <h2 class="heading font-x3">Sagittis quam ac ultricies</h2>
+                <h2 class="heading font-x3">Featured Alumni</h2>
                 <p class="btmspace-50">Non dolor vel pretium posuere diam vivamus eget turpis feugiat consequat ex eu consequat metus pellentesque rutrum nunc nec gravida gravida elit odio lacinia.</p>
-                <footer><a class="btn medium" href="alumni.html">Odio lacus lacinia</a></footer>
+                <div class="owl-carousel owl-theme" id="feat_alumni">
+                    <div class="item">
+                        <img src="images/demo/avatar.png">
+                    </div>
+                </div>
+                <footer><a class="btn medium" href="alumni.html">Connect with more &raquo;</a></footer>
             </article>
         </div>
     </div>
@@ -357,8 +364,20 @@
     <!-- IE9 Placeholder Support -->
     <script src="layout/scripts/jquery.placeholder.min.js"></script>
     <!-- / IE9 Placeholder Support -->
+
+    <!--  Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
 </body>
 <script>
+    // Owl Carousel
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        nav:true,
+        items:1,
+        mouseDrag:true,
+        touchDrag:true,
+    })
+
     // Get the modal
     var modal = document.getElementById('myModal');
 
