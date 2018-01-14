@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
 
@@ -80,7 +81,7 @@
     <div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/01.png')">
         <div id="pageintro" class="hoc clear">
             <article>
-                <h2 class="heading underline center">Alumni Association</h2>
+                <h2 class="heading underline center wow fadeInUp">Alumni Association</h2>
             </article>
         </div>
     </div>
@@ -118,7 +119,7 @@
     <div class="wrapper row3">
         <main class="hoc container clear">
             <div class="group">
-                <div class="two_third first">
+                <div class="two_third first wow fadeInLeft">
                     <figure class="group boxed btmspace-50">
                         <div class="one_half first"><img src="images/demo/320x238.png" alt=""></div>
                         <figcaption class="one_half">
@@ -129,7 +130,7 @@
                         </figcaption>
                     </figure>
                     <div class="group">
-                        <div class="one_half first">
+                        <div class="one_half first wow fadeInDown">
                             <div class="boxed">
                                 <h4 class="heading underline font-x1 btmspace-30">Vestibulum vehicula</h4>
                                 <ul class="infolist">
@@ -169,7 +170,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="one_half">
+                        <div class="one_half wow fadeInUp">
                             <div class="boxed">
                                 <h4 class="heading underline font-x1 btmspace-30">Purus rhoncus lobortis</h4>
                                 <ul class="infolist">
@@ -212,14 +213,14 @@
                     </div>
                 </div>
                 <div class="one_third">
-                    <div id="join" class="btmspace-30">
+                    <div id="join" class="btmspace-30 wow fadeInDown">
                         <article>
                             <h3 class="heading font-x1 underline">Newsletters</h3>
                             <p>Ultricies pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
                             <footer><a class="btn small" href="#">Download &raquo;</a></footer>
                         </article>
                     </div>
-                    <div class="boxed">
+                    <div class="boxed wow fadeInRight">
                         <h4 class="heading underline font-x1 btmspace-30">Sodales dapibus arcu</h4>
                         <ul class="infolist">
                             <li>
@@ -369,8 +370,13 @@
 
     <!--  Owl Carousel -->
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
 </body>
 <script>
+    //WOW
+    new WOW().init();
+        
+    
     // Owl Carousel
     $('.owl-carousel').owlCarousel({
         autoplay : true,
