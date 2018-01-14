@@ -373,12 +373,22 @@
     
     // Owl Carousel
     $('.owl-carousel').owlCarousel({
-        loop:true,
-        items:1,
-        mouseDrag:true,
-        touchDrag:true,
-        stagePadding:50,
-        rewind:true,
+        autoplay : true,
+        autoplayTimeout : 500,
+        autoplayHoverPause : true,
+        loop : true,
+        mouseDrag : true,
+        touchDrag : true,
+        stagePadding : 30,
+        rewind : true,
+        responsive : {
+            0 : {
+                item : 1,
+            },
+            480 : {
+                item : 3,
+            }
+        }
     })
 
     // Get the modal
