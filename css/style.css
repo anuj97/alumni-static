@@ -103,3 +103,16 @@ body {
         height: 22vw;
     }
 }
+
+
+.student-co > div > img{
+    float: left;
+    height: 20vw;
+    width: auto;
+    padding: 1vw 1vw 1vw 1vw;
+    margin: 0vw 1vw 0vw 1vw;
+}
+
+.downbtn {
+    background-color: #fbf8f8;
+}

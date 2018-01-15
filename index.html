@@ -3,6 +3,7 @@
 
 <head>
     <title>IIITDMJ Alumni Association</title>
+    <link rel="icon" href="images/alumb.png" title="ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -77,10 +78,14 @@
         </header>
     </div>
 -->
-    <div class="wrapper bgded overlay" style="background-image:url('images/DSC_0183.JPG')">
+    <div class="wrapper bgded overlay" style="background-image:url('images/DSC_0183-001.JPG')">
         <div id="pageintro" class="hoc clear">
             <article>
-                <h2 class="heading underline center wow fadeInUp">Alumni Association</h2>
+                <h2 class="heading underline center wow fadeInUp">
+                    <img src="images/Alumni%20Assosiation%20Logo.png" style="width: 10vw; height: auto;">
+                    <br>
+                    Alumni Association
+                </h2>
             </article>
         </div>
     </div>
@@ -120,10 +125,11 @@
             <div class="group">
                 <div class="two_third first wow fadeInLeft">
                     <figure class="group boxed btmspace-50">
-                        <div class="one_half first"><img src="images/demo/320x238.png" alt=""></div>
+                        <div class="one_half first"><img src="images/coll.jpg" alt=""></div>
                         <figcaption class="one_half">
-                            <h4 class="heading underline font-x1">HISTORY</h4>
-                            <p>The Alumni Association was established in 2017. The Association is a registered body with the Registrar of Societies, MP.</p>
+                            <h4 class="heading underline font-x1">HISTORY &amp; mission</h4>
+                            <p>The Alumni Association was established in 2017 to operate exclusively for educational support, charitable concerns and scientific research of the Members
+and students undergoing graduation or post-graduation . The Association is a registered body with the Registrar of Societies, MP.</p>
                         </figcaption>
                     </figure>
                     <div class="group">
@@ -169,8 +175,38 @@ Ms. Prateeksha Sharma, Ph.D Scholar, ECE discipline won "Best Student Paper Awar
                         <article>
                             <h3 class="heading font-x1 underline"> Downloads </h3>
                             <p> Find old newletters, NIRF data, Society Registration and other docs here. </p>
-                            <footer><a class="btn small" href="#">Download &raquo;</a></footer>
+                            <footer>
+                                <button id="myBtn" class="btn small">Download &raquo;</button>
+                                <div id="myModal" class="modal">
+                                    <div class="modal-content" style="background-color: #5B9BBD; border-color: white;">
+                                        <span class="close">&times;</span>
+                                        <a href="files/Final%20Draft.pdf">
+                                            <button class="btn small downbtn">Newsletter Jan 2018 &raquo;</button>
+                                        </a>
+                                        <a href="files/newsletter%20apr2017.pub">
+                                            <button class="btn small downbtn">Newsletter Apr 2017 &raquo;</button>
+                                        </a>
+                                        <a href="files/newsletter%20dec2016.pub">
+                                            <button class="btn small downbtn">Newsletter Dec 2016 &raquo;</button>
+                                        </a>
+                                        <a href="files/Minutes%20of%20Meetings%20Alumni%20Meet%2025%2026%20Dec%202016_v1.pdf">
+                                            <button class="btn small downbtn">Alumni Meet Minutes Dec 2016 &raquo;</button>
+                                        </a>
+                                        <a href="files/NEW%20IIITDMJ%20Soceity%20Registration%20%2029-6-2017.pdf">
+                                            <button class="btn small downbtn">Society Registration &raquo;</button>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </footer>
                         </article>
+
+                        <div id="downModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="boxed wow fadeInRight">
                         <h4 class="heading underline font-x1 btmspace-30">Sodales dapibus arcu</h4>
@@ -225,21 +261,14 @@ Ms. Prateeksha Sharma, Ph.D Scholar, ECE discipline won "Best Student Paper Awar
             <div class="accordion">
                 <a href="javascript:void(0);" class="accordiontoggle heading">Alumni Body</a>
                 <div class="linkblock group">
-                    <div class="center">Faculties</div>
-                    <div class="one_third first">
-                        <img src="images/Biswajeet%20Mukherjee.jpg">
-                        <p class="center">Biswajeet Mukherjee</p>
+                    <div class="center heading">Faculties</div>
+                    <br>
+                    <div class="center">
+                        <img src="images/alumbody.jpg">
                     </div>
-                    <div class="one_third">
-                        <img src="images/Abhishek%20Pradhan.jpg">
-                        <p class="center">Abhishek Pradhan</p>
-                    </div>
-                    <div class="one_third">
-                        <img src="images/Aswath%20Sivakumaran.jpg">
-                        <p class="center">Aswath Sivakumaran</p>
-                    </div>
-
-                    <div class="center">Student Co-ordinators</div>
+                    <br>
+                    <div class="center heading">Student Co-ordinators</div>
+                    <br>
                     <div class="one_third first">
                         <img src="images/Sanjog%20Patidar.JPG">
                         <p class="center">Sanjog Patidar</p>
@@ -257,47 +286,74 @@ Ms. Prateeksha Sharma, Ph.D Scholar, ECE discipline won "Best Student Paper Awar
         </div>
     </div>
     <div class="wrapper row4">
+
         <footer id="footer" class="hoc topspace-0 clear">
             <div style="margin: 3vw"></div>
-            <!--            <div id="newsletter" class="clear">
-                <div class="one_quarter first">
-                    <h6 class="nospace topspace-5"><i class="fa fa-newspaper-o"></i> Latest News</h6>
-                </div>
-                <form class="three_quarter" method="post" action="#">
-                    <div class="clear">
-                        <input class="one_third first" type="text" value="" placeholder="Name" required>
-                        <input class="one_third" type="email" value="" placeholder="Email" required>
-                        <button class="one_third" type="submit" title="Sign Up">Sign Up</button>
-                    </div>
-                </form>
-            </div>-->
             <div class="group">
-                <div class="one_half first">
-                    <h6 class="title">Ultrices vestibulum quam</h6>
-                    <p class="btmspace-30">Libero congue maximus orci eu convallis orci fusce nunc lacus dignissim ac gravida id ultricies id mi nulla eget vulputate sem id placerat velit aliquam arcu justo tristique sed neque vitae aliquet mattis libero proin consequat metus sit amet.</p>
-                    <ul class="nospace inline pushright">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Copyright</a></li>
-                        <li><a href="#">Security</a></li>
+                <div class="one_quarter first">
+                    <h6 class="title">About</h6>
+                    <ul class="nospace linkedlist">
+                        <li><a href="http://www.iiitdmj.ac.in/">Home</a></li>
+
+                        <li><a href="http://faculty.iiitdmj.ac.in/" target="_blank">Faculty</a></li>
+
+                        <li><a href="http://pbi.iiitdmj.ac.in/">PBI</a></li>
+
+                        <li><a href="http://www.iiitdmj.ac.in/rti.php">RTI</a></li>
+
+                        <li><a href="http://site.iiitdmj.ac.in/download/IIIT%20Act%2030_of_2014.pdf">IIIT Act</a></li>
+
+
+                        <li><a href="http://www.iiitdmj.ac.in/maps_direction.php">Maps &amp; Directions</a></li>
+
+                         <li><a href="http://site.iiitdmj.ac.in/download/taxi%20services.pdf">Taxi Services</a></li>
+
                     </ul>
                 </div>
                 <div class="one_quarter">
-                    <h6 class="title">Augue molestie</h6>
-                    <article>
-                        <h2 class="nospace font-x1"><a href="#">Velit est at quam</a></h2>
-                        <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos integer volutpat.</p>
-                    </article>
+                    <h6 class="title">Important Links</h6>
+                    <ul class="nospace linkedlist">
+
+                        <li><a href="academics/calendar.php#acad_cal">Academic Calendar</a></li>
+
+                        <li><a href="http://ict.iiitdmj.ac.in/index.html">Electronics and ICT Academy</a></li>
+
+                        <li><a href="http://efee.iiitdmj.ac.in/efee/">On Line Fee Payment</a></li>
+
+
+
+                        <li><a href="http://www.iiitdmj.ac.in/hindi.php">Hindi Notice Board</a></li>
+
+                        <li><a href="http://www.iiitdmj.ac.in/annual_report.php">Annual Report</a></li>
+                         <li><a href="http://www.iiitdmj.ac.in/annual_account.php">Annual Account</a></li>
+                          <li><a href="http://community.worldlibrary.in/?Affiliatikey=NDL-ZY1239" target="_blank">World e-book library</a></li>
+                          <li><a href="http://cec.nic.in/Pages/Home.aspx" target="_blank">Consortium for Educational Communication(CEC)</a></li>
+
+                    </ul>
                 </div>
                 <div class="one_quarter">
-                    <h6 class="title">erat eu dapibus</h6>
-                    <ul class="nospace linklist">
-                        <li><a href="#">Scelerisque tortor ac mollis</a></li>
-                        <li><a href="#">Lectus nisl semper sit amet</a></li>
-                        <li><a href="#">Quis dictum vestibulum arcu</a></li>
-                        <li><a href="#">Curabitur dignissim nulla</a></li>
-                        <li><a href="#">Pulvinar integer dapibus</a></li>
+                    <h6 class="title">Others</h6>
+                    <ul class="nospace linkedlist">
+                        <li><a href="http://site.iiitdmj.ac.in/STSCCell/">SC/ST and Minority Cell</a></li>
+                        <li><a href="http://site.iiitdmj.ac.in/womencell/index.html">Women Cell</a></li>
+                        <li><a href="http://revista.iiitdmj.ac.in/">Revista</a></li>
+                        <li><a href="http://www.iiitdmj.ac.in/contact.php">Contacts</a></li>
+                        <li><a href="http://site.iiitdmj.ac.in/tenders.html">Tenders</a></li>
+                        <li><a href="http://site.iiitdmj.ac.in/home.html">Jobs</a></li>
+                        <li><a href="http://rajbhasha.iiitdmj.ac.in/" target="_blank">Sansthan Rajbhasha Vibhag</a></li>
+                         <li><a href="http://web.iiitdmj.ac.in/download/notifications/List%20of%20Institute%20closed%20holidays%20for%20the%20calender%20year%202017.pdf">Closed Holiday 2017 </a></li>
+                        <li><a href="http://web.iiitdmj.ac.in/download/notifications/List%20of%20Institute%20restricted%20holidays%20for%20the%20calender%20year%202017.pdf">Restricted Holiday 2017 </a></li>
+                    </ul>
+                </div>
+
+                <div class="one_quarter">
+                    <h6 class="title">Contact us</h6>
+                    <ul class="nospace linkedlist">
+                        <li><a href="#">Indian Institute of Information Technology Design & Manufacturing Jabalpur</a></li>
+                        <li><a href="#">Dumna Airport Road, Dumna - 482005</a></li>
+                    </ul>
+                    <ul id="contacts_footer">
+                        <li><a href="downloads/IIITDMJ Telephone Directory.pdf" target="_blank">Phone Directory</a></li>
                     </ul>
                 </div>
             </div>
@@ -310,14 +366,6 @@ Ms. Prateeksha Sharma, Ph.D Scholar, ECE discipline won "Best Student Paper Awar
         </div>
     </div>
 
-    <button id="myBtn">Open Modal</button>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-        </div>
-
-    </div>
 
     <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
     <!-- JAVASCRIPTS -->
