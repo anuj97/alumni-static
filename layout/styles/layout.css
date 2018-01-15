@@ -386,7 +386,7 @@
 #featured .meta li {
     display: inline-block;
     margin: 0 10px 0 0;
-    line-height: 1;
+    line-height: 1.2vw;
     font-size: .8rem;
 }
 
@@ -906,7 +906,7 @@ td {
 --------------------------------------------------------------------------------------------------------------- */
 
 body {
-    color: #AAAAAA;
+    color: #443c3c;
     background-color: #1E252B;
 }
 
@@ -1013,7 +1013,7 @@ textarea:focus,
 }
 
 .row1 {
-    color: #888888;
+    color: #443c3c;
     background-color: #F9F9F9;
     border-color: #D7D7D7;
 }
@@ -1022,7 +1022,7 @@ textarea:focus,
 .row2 a {}
 
 .row3 {
-    color: #888888;
+    color: #443c3c;
     background-color: #FFFFFF;
 }
 

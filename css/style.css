@@ -116,3 +116,10 @@ body {
 .downbtn {
     background-color: #fbf8f8;
 }
+
+.biswa {
+    height: 5vw;
+    width: auto;
+    float: left;
+    margin: 0vw 1vw 0vw 0vw;
+}
