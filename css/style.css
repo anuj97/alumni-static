@@ -1,10 +1,9 @@
 .stuco {
-    width: 20em;
-    height:auto;
+    list-style: none;
 }
 
 .alum {
-    width : 13em;
+    width : 18em;
     height: auto;
 }
 
@@ -92,6 +91,12 @@ body {
         height:7.2vw;
         background-repeat: no-repeat;
     }
+
+    .favico {
+    height: 2.5em;
+    width: auto;
+    padding-right: 0.5em;
+}
 }
 
 @media (min-width : 481px) and (max-width : 767px) {
@@ -102,6 +107,12 @@ body {
         background-size: contain;
         height: 22vw;
     }
+
+    .favico {
+    height: 2em;
+    width: auto;
+    padding-right: 0.5em;
+    }
 }
 
 @media (max-width : 480px) {
@@ -111,6 +122,16 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         height: 22vw;
+    }
+
+    .favico {
+        height: 7em;
+        width: auto;
+        padding-right: 0.5em;
+    }
+
+    .favico-text {
+        display: none;
     }
 }
 
@@ -133,3 +154,4 @@ body {
     float: left;
     margin: 0vw 1em 0vw 0vw;
 }
+
