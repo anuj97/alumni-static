@@ -386,7 +386,7 @@
 #featured .meta li {
     display: inline-block;
     margin: 0 10px 0 0;
-    line-height: 1.2vw;
+    line-height: 1.2em;
     font-size: .8rem;
 }
 

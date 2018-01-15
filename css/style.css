@@ -1,3 +1,13 @@
+.stuco {
+    width: 20em;
+    height:auto;
+}
+
+.alum {
+    width : 13em;
+    height: auto;
+}
+
 body {
     font-family: 'Nunito';
 }
@@ -118,8 +128,8 @@ body {
 }
 
 .biswa {
-    height: 5vw;
+    height: 5em;
     width: auto;
     float: left;
-    margin: 0vw 1vw 0vw 0vw;
+    margin: 0vw 1em 0vw 0vw;
 }
